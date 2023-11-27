@@ -1,0 +1,57 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-story" src="https://cdn.ampproject.org/v0/amp-story-1.0.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>AMPstories</title>
+    <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    
+ <style>
+    amp-story-grid-layer.bottom {
+        align-content:end;
+        color: white;  
+      }
+      .img1 amp-img{
+        object-fit: contain;
+      }
+ </style>
+
+</head>
+  <body>
+    <amp-story standalone>
+        <amp-story-page id="cover">
+            <amp-story-grid-layer template="fill">
+                <amp-img src="images/dog.jpg"
+                width="1200px" height="800px"
+                layout="responsive">
+            </amp-img>
+</amp-story-grid-layer>
+<amp-story-grid-layer template="thirds" class="bottom">
+    <p grid-area="lower-third">HELLO</p>
+  </amp-story-grid-layer>
+        </amp-story-page>
+
+        <amp-story-page id="cover1">
+<amp-story-grid-layer template="vertical" >
+    <amp-img src="images/6.jpg" width="720" height="844" layout="responsive"></amp-img>
+</amp-story-grid-layer>
+        </amp-story-page>
+
+        <amp-story-page id="cover2">
+            <amp-story-grid-layer template="vertical" >
+                <amp-img src="images/1.jpg"  width="720" height="1280"layout="responsive"></amp-img>
+            </amp-story-grid-layer>
+        </amp-story-page>
+
+        <amp-story-page id="cover3">
+            <amp-story-grid-layer template="fill">
+                <amp-img src="images/rabbit.jpg"  width="720" height="1280" layout="responsive"></amp-img>
+            </amp-story-grid-layer>
+        </amp-story-page>
+
+    </amp-story>
+  </body>
+</html>
